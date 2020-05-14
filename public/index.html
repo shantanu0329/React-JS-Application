@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Ordering Direct App</title>
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!-- Bootstrap Core CSS -->
+    <link href="%PUBLIC_URL%/css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <!-- Custom CSS -->
+    <link href="%PUBLIC_URL%/css/style.css" rel='stylesheet' type='text/css' />
+    <link href="%PUBLIC_URL%/css/style2.css" rel='stylesheet' type='text/css' />
+    <link href="%PUBLIC_URL%/css/toaster.css" rel='stylesheet' type='text/css' />
+    <!-- font CSS -->
+    <!-- font-awesome icons -->
+    <link href="%PUBLIC_URL%/css/font-awesome.css" rel="stylesheet"> 
+    <!-- //font-awesome icons -->
+     <!-- js-->
+    <script src="%PUBLIC_URL%/js/jquery-1.11.1.min.js"></script>
+    <script src="%PUBLIC_URL%/js/modernizr.custom.js"></script>
+    <!--webfonts-->
+    <link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <!--//webfonts--> 
+    <!--animate-->
+    <link href="%PUBLIC_URL%/css/animate.css" rel="stylesheet" type="text/css" media="all">
+    <script src="%PUBLIC_URL%/js/wow.min.js"></script>
+      <script>
+         new WOW().init();
+      </script>
+    <!--//end-animate-->
+    <!-- chart -->
+    <script src="%PUBLIC_URL%/js/Chart.js"></script>
+    <!-- //chart -->
+    <!--Calender-->
+    <link rel="stylesheet" href="%PUBLIC_URL%/css/clndr.css" type="text/css" />
+    <script src="%PUBLIC_URL%/js/underscore-min.js" type="text/javascript"></script>
+    <script src= "%PUBLIC_URL%/js/moment-2.2.1.js" type="text/javascript"></script>
+    <!-- <script src="%PUBLIC_URL%/js/clndr.js" type="text/javascript"></script> -->
+    <!-- <script src="%PUBLIC_URL%/js/site.js" type="text/javascript"></script> -->
+    <!--End Calender-->
+    <!-- Metis Menu -->
+    <script src="%PUBLIC_URL%/js/metisMenu.min.js"></script>
+    <script src="%PUBLIC_URL%/js/custom.js"></script>
+    <link href="%PUBLIC_URL%/css/custom.css" rel="stylesheet">
+    </head>
+    
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root" class="cbp-spmenu-push"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+  <script src="%PUBLIC_URL%/js/classie.js"></script>
+  <script>
+    $( document ).ready(function() {
+      var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
+      showLeftPush = document.getElementById( 'showLeftPush' ),
+      body = document.body;
+      
+      $( "#showLeftPushh" ).click(function() {
+
+    	classie.toggle( this, 'active' );
+    	classie.toggle( body, 'cbp-spmenu-push-toright' );
+    	classie.toggle( menuLeft, 'cbp-spmenu-open' );
+    	disableOther( 'showLeftPush' );
+    });
+    
+
+    function disableOther( button ) {
+      if( button !== 'showLeftPush' ) {
+        classie.toggle( showLeftPush, 'disabled' );
+      }
+    }
+  });
+    
+  </script>
+<!--scrolling js-->
+<script src="%PUBLIC_URL%/js/jquery.nicescroll.js"></script>
+<script src="%PUBLIC_URL%/js/scripts.js"></script>
+<!--//scrolling js-->
+<!-- Bootstrap Core JavaScript -->
+ <script src="%PUBLIC_URL%/js/bootstrap.js"> </script>
+ <!-- <script src="%PUBLIC_URL%/firebase-messaging-sw.js"> </script>
+ <script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-app.js"></script>
+
+   TODO: Add SDKs for Firebase products that you want to use
+   https://firebase.google.com/docs/web/setup#available-libraries 
+<script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-messaging.js'"></script>
+
+<script>
+
+var firebaseConfig = {
+  apiKey: "AIzaSyBiL5rXZYx_xppzJWXl6eogwqaqubLi0k4",
+  authDomain: "orderingdirect-8f365.firebaseapp.com",
+  databaseURL: "https://orderingdirect-8f365.firebaseio.com",
+  projectId: "orderingdirect-8f365",
+  storageBucket: "orderingdirect-8f365.appspot.com",
+  messagingSenderId: "184480344137",
+  appId: "1:184480344137:web:30d3742a98c4e6140eb798",
+  measurementId: "G-2CHWZXQVF2"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+firebase.analytics();
+</script> -->
+
+</html>

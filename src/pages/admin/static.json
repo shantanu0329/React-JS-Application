@@ -1,0 +1,105 @@
+{
+  "status": "Success",
+  "code": "10",
+  "message": "Restaurant list.",
+  "result": [
+      {
+          "id": 15,
+          "name": "Aroma Burgers",
+          "app_id": "QXJvbWEgQnVyZ2Vycw==",
+          "email": "",
+          "mobile": null
+      },
+      {
+          "id": 14,
+          "name": "Siam Heaven",
+          "app_id": "U2lhbSBIZWF2ZW4=",
+          "email": "info@siamheaven.co.uk",
+          "mobile": "01234363300"
+      },
+      {
+          "id": 13,
+          "name": "The Indian Curry Cardinal",
+          "app_id": "VGhlIEluZGlhbiBDdXJyeSBDYXJkaW5hbA==",
+          "email": "info@theindiancurrycardinal.co.uk",
+          "mobile": "07817761063"
+      },
+      {
+          "id": 12,
+          "name": "Masala Bay Greenwich",
+          "app_id": "TWFzYWxhIEJheSBHcmVlbndpY2g=",
+          "email": "info@masalabaygreenwich.co.uk",
+          "mobile": "02088581500"
+      },
+      {
+          "id": 11,
+          "name": "Hippos Pizza",
+          "app_id": "SGlwcG9zIFBpenph",
+          "email": "info@hippospizza.com",
+          "mobile": "01132747777"
+      },
+      {
+          "id": 10,
+          "name": "Gourmet Pizza Kitchen",
+          "app_id": "R291cm1ldCBQaXp6YSBLaXRjaGVu",
+          "email": "info@gourmetpizzakitchen.co.uk",
+          "mobile": "02033025591"
+      },
+      {
+          "id": 9,
+          "name": "Delhi Spice Takeaway",
+          "app_id": "RGVsaGkgU3BpY2UgVGFrZWF3YXk=",
+          "email": "info@delhispicetakeaway.co.uk",
+          "mobile": "01548858844"
+      },
+      {
+          "id": 8,
+          "name": "Namaste Kitchen",
+          "app_id": "TmFtYXN0ZSBLaXRjaGVu",
+          "email": "info@namaste-kitchen.co.uk",
+          "mobile": "02074855977"
+      },
+      {
+          "id": 7,
+          "name": "The Gaylord",
+          "app_id": "VGhlIEdheWxvcmQ=",
+          "email": "gaylord@orderingdirect.co.uk",
+          "mobile": "02075389826"
+      },
+      {
+          "id": 6,
+          "name": "check Restaurant",
+          "app_id": "Y2hlY2sgUmVzdGF1cmFudA==",
+          "email": "check@orderingapp.com",
+          "mobile": null
+      },
+      {
+          "id": 5,
+          "name": "Demo Restaurant",
+          "app_id": "RGVtbyBSZXN0YXVyYW50",
+          "email": "demo@gmail.com",
+          "mobile": null
+      },
+      {
+          "id": 4,
+          "name": "Saffron Lounge",
+          "app_id": "U2FmZnJvbiBMb3VuZ2U=",
+          "email": "saffron@orderingapp.com",
+          "mobile": "876454343641"
+      },
+      {
+          "id": 2,
+          "name": "Taquilla REstaurant",
+          "app_id": "VGFxdWlsbGFAcmVzdGF1cmFudC5jb20=",
+          "email": "Taquilla@restaurant.com",
+          "mobile": "789465888"
+      },
+      {
+          "id": 1,
+          "name": "MUMBAI RESTAURANT",
+          "app_id": "Rmlyc3QgUmVzdGF1cmFudA==",
+          "email": "info@mumbairestaurant.com",
+          "mobile": "02032212049"
+      }
+  ]
+}
