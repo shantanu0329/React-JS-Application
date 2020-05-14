@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import {HashRouter as BrowserRouter, Route, Switch} from 'react-router-dom';
 import History from '../pages/History';
 import Faq from '../pages/Faq';
 import Setting from '../pages/Setting';

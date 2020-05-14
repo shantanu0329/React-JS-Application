@@ -2,7 +2,7 @@
   "name": "saffron",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://shantanu0329.github.io/react/",
+  "homepage": "http://shantanu0329.github.io/react/",
   "dependencies": {
     "@material-ui/core": "^4.9.13",
     "@material-ui/icons": "^4.9.1",
