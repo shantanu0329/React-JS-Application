@@ -3,6 +3,7 @@ import AdminHeader from '../../Components/AdminHeader';
 import { URL } from '../../Services/constants';
 import Loader from '../../Components/loader';
 
+
 class AddRestaurant extends Component {
 
 	constructor(props) {
@@ -51,12 +52,11 @@ class AddRestaurant extends Component {
 					if (result.status === "Success") {
 						this.setState({
 							spinner: false,
-							errors: true,
 							show: true,
 							msg: result.message
                         });
-                        
-						this.props.history.push('/Restaurants');
+                        this.props.history.push('/Restaurants');
+						// this.props.history.push({pathname:'/Restaurants',state:{added:true}});
 					}
 					else {
 						this.setState({
@@ -122,6 +122,7 @@ class AddRestaurant extends Component {
 				}
 				<AdminHeader />
                 
+					
 				<div id="page-wrapper">
 					<div className="main-page">
 						<div className="tables forms">

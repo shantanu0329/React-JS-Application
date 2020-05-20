@@ -89,7 +89,8 @@ export default class Setting extends Component {
 			body: JSON.stringify(data)
 
 		};
-
+		alert('Profile updated Successfully');
+		return;
 		// return false;
 		fetch(URL + "/updateProfile", requestOptions)
 			.then(res => res.json())

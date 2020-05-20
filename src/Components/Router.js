@@ -1,5 +1,5 @@
 import React from 'react';
-import {HashRouter as BrowserRouter, Route, Switch} from 'react-router-dom';
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import History from '../pages/History';
 import Faq from '../pages/Faq';
 import Setting from '../pages/Setting';
@@ -7,6 +7,7 @@ import Dashboard from '../pages/Dashboard';
 import OrderDetail from '../pages/OrderDetail';
 import Login from '../pages/Login';
 import Landing from '../pages/Landing';
+import PendingOrders from '../pages/PendingOrders';
 import AddRestaurant from '../pages/admin/AddRestaurant';
 import ShowRestaurant from '../pages/admin/ShowRestaurant';
 import PageNotFound from './PageNotFound';
@@ -23,6 +24,7 @@ export default function Router() {
                         <Route path="/settings" component={Setting} />
                         <Route path="/Faq" component={Faq} />
                         <Route path="/logout" component={Landing} />
+                        <Route path="/pendingOrders" component={PendingOrders} />
                         <Route path="/Restaurants" component={ShowRestaurant} />
                         <Route path="/AddRestaurant" component={AddRestaurant} />
                         <Route path="/" exact component={Login} />

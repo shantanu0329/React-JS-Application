@@ -10,7 +10,7 @@ class App extends Component {
     messaging.requestPermission().then(async()=>{
       return messaging.getToken()
     }).then(token=>{
-      console.log('Token = ',token)
+      // console.log('Token = ',token)
       localStorage.setItem('fcmToken',token);
     }).catch((e)=>{
       console.log(e);
@@ -18,7 +18,8 @@ class App extends Component {
 
     messaging.onMessage((payload) => {
       console.log('Message received. ', payload);
-      alert(payload.data.title)
+      alert('Firebase Push Notification Received.')
+      // alert(payload.data.title)
       // let order_id = obj.order_id;
       // let title = obj.title;
     });

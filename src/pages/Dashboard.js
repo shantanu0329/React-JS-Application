@@ -26,6 +26,11 @@ class Dashboard extends Component {
   async componentDidMount() {
     // console.log(this.props.restaurantDetail.restaurant_details);
     this.setState({ spinner: true });
+    let fcmToken = localStorage.getItem('fcmToken');
+    if(!fcmToken){
+      alert('Please enable notifications on this website and reload to login.');
+      return;
+    }
     let mobile_token = localStorage.getItem('mobile_accessToken');
     if (!mobile_token) {
       let data = this.state;
@@ -46,7 +51,8 @@ class Dashboard extends Component {
           localStorage.setItem('rest_name', result.result[0].name);
           localStorage.setItem('profile_pic', result.result[0].profile_pic);
           localStorage.setItem('service_charge', result.result[0].service_charge);
-
+          localStorage.setItem('pending_order_count', result.result[0].pending_order_count);
+          
 
         }
       } catch (error) {
@@ -146,6 +152,7 @@ class Dashboard extends Component {
                           </tr>
                         ) : <tr><td colSpan="6">No record found.</td></tr>
                     }
+                    
                   </tbody>
                 </table>
               </div>

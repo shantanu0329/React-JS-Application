@@ -9,17 +9,18 @@ class ShowRestaurant extends Component {
   constructor(props) {
     super(props);
       const accessToken= localStorage.getItem('accessToken');
-
-      // console.log(accessToken);
+      
       this.state = {
         spinner:false,
         dhaba:[],
+		    snack:false,
         data: 'Bearer '+accessToken
       }
     }
 
 
   componentDidMount() {
+  
     this.setState({spinner: true});
     let accessToken = this.state.data;
     const requestOptions = {
@@ -52,6 +53,8 @@ class ShowRestaurant extends Component {
       )
   }
 
+
+  
   render() {
     const showLoader = this.state.spinner;
     const todos = this.state.dhaba[0];
@@ -63,6 +66,7 @@ class ShowRestaurant extends Component {
 				:""
 			  }
         <AdminHeader />
+       
         <div id="page-wrapper">
           <div className="main-page">
             <div className="tables">
